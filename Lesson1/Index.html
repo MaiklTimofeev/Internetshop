@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="header center">
+    <header class="header center">
         <div class="header__left">
-            <a href="#" class="logo">
-                <img class="logo__img" src="img/logo.png" alt="logo">BRAND
+            <a href="index.html" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">BRAN<spun class="letter__red">D</spun>
             </a>
             <form action="" class="header__form">
                 <div class="browse">Browse</div>
-                <input class="search__input" placeholder="Search for item" type="text">
-                <button><img class="search__image" src="img/search.png" alt="search"></button>
+                <input class="search__input" placeholder="Search for item.." type="text">
+                <button class="search__button"><img class="search__image" src="img/search.png" alt="search"></button>
             </form>
         </div>
         <div class="header__right">
@@ -27,13 +28,12 @@
             <a class="button" href="#">My Account &#9660</a>
         </div>
 
-    </div>
+    </header>
 
-    <div class="nav center">
+    <nav class="main__menu center">
         <ul class="menu center">
-
-            <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
+            <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="single page.html" class="menu__link">Man</a></li>
             <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
             <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
             <li class="menu__list"><a href="#" class="menu__link">Accessories</a></li>
@@ -41,108 +41,126 @@
             <li class="menu__list"><a href="#" class="menu__link">Hot Deals</a></li>
         </ul>
 
-    </div>
+    </nav>
 
-    <div class="promo center">
+    <section class="promo center">
         <div class="promo__content">
             <h1 class="promo__h1">THE BRAND</h1>
-            <h2 class="promo__h2">OF LUXEROUS <span class="promo__h2__red">FASHION</span></h2>
+            <h2 class="promo__h2">OF LUXEROUS <span class="letter__red">FASHION</span></h2>
         </div>
-    </div>
+    </section>
 
-    <div class="main__cont center">
-        <div class="main__left">
+    <section class="main__cont center clearfix">
+        <article class="main__left">
             <div class="main__left__big">
-                <div class="main__text">
-                    <h1 class="main__text__h1">hOT dEAL</h1>
-                    <h2 class="main__text__h2">FOR MEN</h2>
+                <div class="main__text"><a href="#">
+                    <h2 class="main__text__h2">hOT dEAL</h2>
+                    <spun class="letter__red">FOR MEN</spun>
+                </a>
                 </div>
-
             </div>
             <div class="main__left__small">
-                <div class="main__text">
-                    <h1 class="main__text__h1">LUXIROUS & trendy</h1>
-                    <h2 class="main__text__h2">ACCESORIES</h2>
+                <div class="main__text"><a href="#">
+                    <h2 class="main__text__h2">LUXIROUS & trendy</h2>
+                    <spun class="letter__red">ACCESORIES</spun>
+                </a>
                 </div>
             </div>
-        </div>
-        <div class="main__right">
+        </article>
+        <article class="main__right">
             <div class="main__right__small">
-                <div class="main__text">
-                    <h1 class="main__text__h1">30% offer</h1>
-                    <h2 class="main__text__h2">women</h2>
+                <div class="main__text"><a href="#">
+                    <h2 class="main__text__h2">30% offer </h2>
+                    <spun class="letter__red">women</spun></a>
                 </div>
             </div>
             <div class="main__right__big">
-                <div class="main__text">
-                    <h1 class="main__text__h1">new arrivals</h1>
-                    <h2 class="main__text__h2">FOR kids</h2>
+                <div class="main__text"><a href="#">
+                    <h2 class="main__text__h2">new arrivals</h2>
+                    <spun class="letter__red">FOR kids</spun></a>
                 </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
 
-    <div class="clearfix"></div>
-
-    <div class="featured center">
-        <h1 class="featured__h1">Featured Items</h1>
-        <h2 class="featured__h2">Shop for items on what we featured in this week</h2>
+    <section class="featured center clearfix">
+        <h2 class="featured__h2">Featured Items</h2>
+        <p class="featured__p">Shop for items on what we featured in this week</p>
         <div class="featured__product">
-            <div class="product__name">
+            <div class="product">
                 <a href="#" class="product__picture"><img src="img/product-picture-1.png" alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
-            <div class="product__name"><a href="#" class="product__picture"><img src="img/product-picture-2.png"
-                        alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
+            <div class="product">
+                <a href="#" class="product__picture"><img src="img/product-picture-2.png" alt="product picture"></a>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
-            <div class="product__name"><a href="#" class="product__picture"><img src="img/product-picture-3.png"
-                        alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
+            <div class="product">
+                <a href="#" class="product__picture"><img src="img/product-picture-3.png" alt="product picture"></a>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
-            <div class="product__name"><a href="#" class="product__picture"><img src="img/product-picture-4.png"
-                        alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
+            <div class="product">
+                <a href="#" class="product__picture"><img src="img/product-picture-4.png" alt="product picture"></a>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
-            <div class="product__name"><a href="#" class="product__picture"><img src="img/product-picture-5.png"
-                        alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
+            <div class="product">
+                <a href="#" class="product__picture"><img src="img/product-picture-5.png" alt="product picture"></a>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
-            <div class="product__name"><a href="#" class="product__picture"><img src="img/product-picture-6.png"
-                        alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
+            <div class="product">
+                <a href="#" class="product__picture"><img src="img/product-picture-6.png" alt="product picture"></a>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
-            <div class="product__name"><a href="#" class="product__picture"><img src="img/product-picture-7.png"
-                        alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
+            <div class="product">
+                <a href="#" class="product__picture"><img src="img/product-picture-7.png" alt="product picture"></a>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
-            <div class="product__name"><a href="#" class="product__picture"><img src="img/product-picture-8.png"
-                        alt="product picture"></a>
-                <h1 class="product__h1">Mango People T-shirt</h1>
-                <h2 class="product__h2">$52.00</h2>
-            </div>
-            <div class="button__browse">
-                <a class="button" href="#">Browse all product &rarr;</a>
+            <div class="product">
+                <a href="#" class="product__picture"><img src="img/product-picture-8.png" alt="product picture"></a>
+                <div class="product__content">
+                    <a href="" class="product__name">Mango People T-shirt</a>
+                    <p class="product__price">$52.00</p>
+                </div>
+                <a href="#" class="product__add">Add to Cart</a>
             </div>
         </div>
 
-    </div>
+    </section>
 
-    <div class="clearfix"></div>
-
-    <div class="down__info center">
-        <div class="down__left">
-            <h1 class="offer__h1">30% <span class="offer__h1__red">OFFER</span></h1>
-            <h2 class="offer__h2">FOR WOMEN</h2>
+    <section class="offer__info center clearfix">
+        <div class="offer__left">
+            <h2 class="offer__h2">30% <span class="letter__red">OFFER</span></h2>
+            <p class="offer__p">FOR WOMEN</p>
         </div>
-        <div class="down__right">
+        <div class="offer__right">
             <div class="information">
                 <div class="information__block">
                     <img class="information__logo" src="img/delivery-logo.png" alt="delivery-logo">
@@ -173,31 +191,94 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="clearfix"></div>
-
-    <div class="subscribe center">
-        <div class="subscribe__quote">
+    <section class="subscribe center clearfix">
+        <article class="subscribe__quote">
             <div class="subscribe__quote__text">
                 <img class="subscribe__picture" src="img/subscribe-face.png" alt="subscribe-face">
                 <div class="subscribe__p__h">
                     <p class="quote__p">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
                         condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-                    <h1 class="quote__h1">Bin Burhan</h1>
-                    <h2 class="quote__h2">Dhaka, Bd</h2>
+                    <h2 class="quote__h2">Bin Burhan</h2>
+                    <p class="quote__p1">Dhaka, Bd</p>
+                    <ul class="quote__lines">
+                        <li class="quote__line"></li>
+                        <li class="quote__line quote__line__red"></li>
+                        <li class="quote__line"></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="subscribe__mail">
-            <h1 class="subscribe__mail__h1">subscribe</h1>
-            <h2 class="subscribe__mail__h2">FOR OUR NEWLETTER AND PROMOTION</h2>
+            <h2 class="subscribe__mail__h2">subscribe</h2>
+            <p class="subscribe__mail__p">FOR OUR NEWLETTER AND PROMOTION</p>
             <form action="" class="subscribe__form">
-                <input class="subscribe__input" placeholder="Enter Your Email" type="text"><button class="button__subscribe">subscribe</button>
+                <input class="subscribe__input" placeholder="Enter Your Email" type="text"><button
+                    class="button__subscribe">Subscribe</button>
         </div>
-    </div>
+    </section>
 
-    <div class="footer center"></div>
+    <section class="down__info center clearfix">
+        <article class="down__brand">
+            <a href="#" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">BRAN<spun class="letter__red">D</spun>
+            </a>
+            <h2 class="down__brand__h2">Objectively transition extensive data rather than cross functional solutions.
+                Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate
+                an expanded array of processes and cross-unit partnerships. <br> <br> Efficiently plagiarize 24/365
+                action items and focused infomediaries. Distinctively seize superior initiatives for wireless
+                technologies. Dynamically optimize.</h2>
+        </article>
+        <nav class="down__company">
+            <h2 class="down__info__h2">company</h2>
+            <ul class="down__ul">
+                <li class="down__li"><a href="#" class="down__link">Home</a></li>
+                <li class="down__li"><a href="#" class="down__link">Shop</a></li>
+                <li class="down__li"><a href="#" class="down__link">About</a></li>
+                <li class="down__li"><a href="#" class="down__link">How It Works</a></li>
+                <li class="down__li"><a href="#" class="down__link">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="down__information">
+            <h2 class="down__info__h2">information</h2>
+            <ul class="down__ul">
+                <li class="down__li"><a href="#" class="down__link">Terms &amp; Condition</a></li>
+                <li class="down__li"><a href="#" class="down__link">Privacy Policy</a></li>
+                <li class="down__li"><a href="#" class="down__link">How to Buy</a></li>
+                <li class="down__li"><a href="#" class="down__link">How to Sell</a></li>
+                <li class="down__li"><a href="#" class="down__link">Promotion</a></li>
+            </ul>
+        </nav>
+        <nav class="down__category">
+            <h2 class="down__info__h2">Shop category</h2>
+            <ul class="down__ul">
+                <li class="down__li"><a href="#" class="down__link">Men</a></li>
+                <li class="down__li"><a href="#" class="down__link">Women</a></li>
+                <li class="down__li"><a href="#" class="down__link">Child</a></li>
+                <li class="down__li"><a href="#" class="down__link">Apparel</a></li>
+                <li class="down__li"><a href="#" class="down__link">Brows All</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="clr"></div>
+
+    <footer class="footer center">
+        <div class="footer__left">
+            <p class="footer__text">&copy; 2020 Brand All Rights Reserved</p>
+        </div>
+        <div class="footer__right">
+            <ul class="footer__ul">
+                <li class="footer__list"><a href="#" class="fa fa-facebook"></a></li>
+                <li class="footer__list"><a class="footer__link" href="#"><a href="#" class="fa fa-twitter"></a></li>
+                <li class="footer__list"><a href="#" class="fa fa-linkedin"></a></li>
+                <li class="footer__list"><a href="#" class="fa fa-pinterest"></a></li>
+                <li class="footer__list"><a href="#" class="fa fa-google"></a></li>
+            </ul>
+        </div>
+    </footer>
+
 
 
 </body>
