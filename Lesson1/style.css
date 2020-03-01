@@ -588,7 +588,6 @@ a {
   font-size: 14px;
   font-weight: 300;
   color: rgba(137, 137, 137, 1);
-  text-align: ;
   letter-spacing: 0.03em;
   line-height: 24px;
   margin-top: 29px;
@@ -658,7 +657,6 @@ a {
   width: 200px;
   display: flex;
   justify-content: space-between;
-  padding-right: ;
 }
 
 .fa {
