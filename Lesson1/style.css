@@ -3,9 +3,11 @@
   padding: 0;
 }
 
+
 body {
   font-family: 'Lato';
 }
+
 
 .center {
   padding: 0 calc(50% - 570px);
@@ -127,20 +129,18 @@ a {
 
 
 .menu__link {
-  padding: 20px;
+  padding: 17px;
   display: block;
   font-size: 14px;
   font-weight: bold;
   color: rgba(34, 34, 34, 1);
   line-height: 26px;
   text-transform: uppercase;
-  border-bottom: 1px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .menu__link:hover {
-  border-bottom: 1px solid black;
-  background-color: rgba(245, 245, 245, 1);
-  border-radius: 2px;
+  border-bottom: 3px solid rgba(239, 91, 112, 1);
 }
 
 .promo {
@@ -247,12 +247,8 @@ a {
 
 .main__text__h2 {
   font-size: 18px;
-
+  color: rgba(34, 34, 34, 1);
 }
-
-.featured {}
-
-
 
 .featured__product {
   display: flex;
@@ -283,7 +279,6 @@ a {
 
 .product {
   width: 261px;
-
   margin-bottom: 39px;
   position: relative;
 }
@@ -313,7 +308,6 @@ a {
   color: #222222;
   text-transform: uppercase;
   margin-top: 16px;
-  ;
 }
 
 .product__price {
@@ -351,14 +345,13 @@ a {
 .offer__info {
   display: flex;
   margin-top: 132px;
-
 }
 
 .offer__left {
+  display: fl;
   width: 767px;
   height: 529px;
   background-image: url(img/offer.png);
-
 }
 
 .offer__h2 {
@@ -385,19 +378,21 @@ a {
 }
 
 .information {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-left: 20px;
 }
 
 .information__block {
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .information__logo {
   display: flex;
-  margin: 50px 36px;
 }
 
 .information__h1__p {
@@ -409,8 +404,6 @@ a {
   font-weight: bold;
   color: rgba(251, 251, 251, 1);
   letter-spacing: 0.03em;
-  margin-top: 34px;
-
 }
 
 .information__text {
@@ -436,19 +429,16 @@ a {
 .subscribe__quote {
   width: 561px;
   height: 438px;
-
 }
 
 .subscribe__quote__text {
-  padding-top: 111px;
+  padding-top: 120px;
   display: flex;
-
 }
 
 .subscribe__picture {
   width: 83px;
   height: 83px;
-
 }
 
 .subscribe__p__h {
@@ -483,7 +473,6 @@ a {
   line-height: 14px;
 }
 
-
 .quote__lines {
   display: flex;
 }
@@ -496,13 +485,12 @@ a {
   margin-right: 13px;
 }
 
-
 .quote__line__red {
   border-color: rgba(241, 109, 127, 1);
 }
 
 .subscribe__mail {
-  width: 561px;
+  width: 100%;
   height: 438px;
 
 }
@@ -514,7 +502,7 @@ a {
   letter-spacing: 0.03em;
   line-height: 54px;
   text-transform: uppercase;
-  padding-top: 148px;
+  padding-top: 120px;
 }
 
 .subscribe__mail__p {
@@ -529,12 +517,11 @@ a {
   height: 46px;
   width: 450px;
   border-radius: 23px;
-  margin-top: 35px;
+  margin-top: 30px;
   margin-left: 92px;
 }
 
 .button__subscribe {
-  height: 46px;
   padding-left: 15px;
   padding-right: 26px;
   background-color: rgba(241, 109, 127, 1);
@@ -544,8 +531,8 @@ a {
   font-size: 14px;
   color: rgba(255, 255, 255, 1);
   text-align: center;
+  line-height: 46px;
   letter-spacing: 0.03em;
-
 }
 
 .button__subscribe:hover {
@@ -556,21 +543,19 @@ a {
 .subscribe__input {
   padding-left: 16px;
   width: 260px;
-  height: 46px;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
   background-color: rgba(225, 225, 225, 1);
   font-size: 14px;
   color: rgba(34, 34, 36, 1);
   letter-spacing: 0.03em;
-  line-height: 54px;
+  line-height: 46px;
   border: none;
 }
 
 .clr {
   height: 80px;
 }
-
 
 .down__info {
   height: 349px;
@@ -634,6 +619,11 @@ a {
   color: rgba(137, 137, 137, 1);
 }
 
+.down__link:hover {
+  color: rgb(77, 76, 76);
+  text-shadow: rgba(137, 137, 137, 1);;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -642,8 +632,6 @@ a {
   margin-top: -80px;
   background-color: rgba(230, 230, 230, 1);
 }
-
-.footer__left {}
 
 .footer__text {
   font-size: 16px;
@@ -666,6 +654,7 @@ a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  display: flex;
 }
 
 .fa:hover {
@@ -680,4 +669,38 @@ a {
 .fa-google {
   background: white;
   color: rgba(178, 178, 178, 1);
+}
+
+.page__up {
+  height: 148px;
+  background-color: rgba(248, 243, 244, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__up__left {
+  font-size: 24px;
+  font-weight: 900;
+  color: rgba(241, 109, 127, 1);
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.page__up__right {
+  list-style-type: none;
+  display: flex;
+}
+
+.page__up__link {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(99, 99, 99, 1);
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.page__up__text:hover {
+  color: rgba(241, 109, 127, 1);
 }
