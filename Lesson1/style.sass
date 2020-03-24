@@ -132,15 +132,27 @@ a
             transform: translateX(0)
     -webkit-animation-timing-function: ease-out
             animation-timing-function: ease-out
-  
 
+input:focus::-webkit-input-placeholder 
+    color: transparent 
 
-    
+html,
+body
+    height: 100%
+
+.wrapper 
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.top 
+  flex-grow: 1
+
 .header
     height: 100px
     background-color: #ffffff
     border: 1px solid #ececec
-    box-shadow: 0 0 10 0 #ececec
+    box-shadow: 0 0 10px 0 #ececec
     display: flex
     justify-content: space-between
     align-items: center
@@ -158,24 +170,27 @@ a
 .search
     &__input
         height: 38px
-        width: 261px
+        width: 245px
         background-color: rgba(255, 255, 255, 1)
         border: 1px solid rgba(230, 230, 230, 1)
         border-left: none
         border-right: none
         padding-left: 16px
+        padding-right: 16px
         font-weight: 300
         color: rgba(164, 164, 164, 1)
         letter-spacing: 0.03em
         line-height: 32px
         outline: none
+        &:focus::-webkit-input-placeholder 
+            color: transparent
     &__button
         height: 40px
         width: 40px
         border: 1px solid rgba(230, 230, 230, 1)
         border-radius: 0px 3px 3px 0px
         background-color: white
-
+        outline: none
 
 .browse
     display: flex
@@ -642,7 +657,8 @@ a
             color: $color-site
     &__input
         padding-left: 16px
-        width: 260px
+        padding-right: 16px
+        width: 244px
         height: 46px
         border-top-left-radius: 23px
         border-bottom-left-radius: 23px
@@ -839,6 +855,7 @@ a
     border-left: 5px solid rgba(239, 91, 112, 1)
     padding: 11px
     margin-bottom: 18px
+    outline: none
     &::-webkit-details-marker
         display: none
     &::after
@@ -863,7 +880,7 @@ a
     justify-content: space-between
 
 .sort__options
-    width: 174px
+    width: 182px
     height: 74px
     border: none
     &__legend
@@ -879,6 +896,8 @@ a
         flex-wrap: wrap
     &__input
         width: 263px 
+    &__checkbox
+        height: 12px
 
 .trend__list
     padding-right: 8px
@@ -1130,12 +1149,13 @@ details[open]>sort__summary::after
             display: flex
             align-items: center
     &__input
-        width: 390px
+        width: 374px
         height: 45px
         margin-top: 12px
         margin-bottom: 16px
         font-size: 14px
         padding-left: 16px
+        padding-right: 16px
         outline: none
 
 
@@ -1228,6 +1248,7 @@ details[open]>.checkout__info__summary::after
             width: 54px
             height: 30px
             text-align: center
+            outline: none
     &__shipping
         width: 80px
         text-align: center
@@ -1362,16 +1383,16 @@ details[open]>.checkout__info__summary::after
         border: 1px solid rgba(234, 234, 234, 1)
         display: flex
         justify-content: space-around
-
         align-items: center
-
     &__arrow
-        background-color: rgba(42, 42, 42, 0.15)
-        width: 47px
-        height: 47px
         display: flex
         justify-content: center
         align-items: center
+        a
+            background-color: rgba(42, 42, 42, 0.15)
+            padding: 14px 19.5px
+            
+        
     &__back   
         padding: 0 calc(50% - 570px)
         border: 1px solid rgba(234, 234, 234, 1)
@@ -1385,7 +1406,8 @@ details[open]>.checkout__info__summary::after
         width: 625px
     &__collection
         padding-top: 43px
-        width: 120px
+        width: 128px
+        text-align: center
         font-size: 14px
         font-weight: bold
         color: $color-site
@@ -1471,6 +1493,7 @@ details[open]>.checkout__info__summary::after
                 border: 1px solid rgba(188, 188, 188, 1)
                 margin-top: 16px
                 padding-left: 17px
+                outline: none
     &__add
         padding-top: 28px    
         padding-bottom: 95px
